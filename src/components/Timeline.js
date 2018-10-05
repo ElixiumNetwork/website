@@ -4,7 +4,7 @@ const events = [
   {
     title: 'Founded',
     date: 'Feb 2018',
-    description: 'This is a description of the event',
+    description: 'Elixium founded as UltraDark',
     completed: true
   },
   {

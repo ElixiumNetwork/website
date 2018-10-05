@@ -3,6 +3,10 @@ import Button from '../components/Button'
 import Section from './Section'
 import headerImage from '../assets/images/Cryptocurrency.png'
 
+const openTelegram = () => {
+  window.open('https://t.me/elixiumnetwork', '_blank')
+}
+
 export default props => (
   <Section>
     <div className="textBlock">
@@ -12,8 +16,8 @@ export default props => (
         for you, in a way that works for you. No more learning new
         languages to build for the new web.
       </p>
-      <Button primary text='Learn More' />
+      <Button primary text='Telegram Group' onClick={ openTelegram } />
     </div>
-    <img src={ headerImage } className="sectionImage right" />
+    <img src={ headerImage } className="sectionImage right" alt='' />
   </Section>
 )

@@ -5,7 +5,7 @@ import SectionHeader from '../components/SectionHeader'
 
 export default props => (
   <Section
-    ref={ ref => this.roadmap = ref }
+    id="roadmap"
     style={{
       paddingLeft: '100px',
       paddingRight: '100px',

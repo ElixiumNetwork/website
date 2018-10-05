@@ -15,6 +15,21 @@ p {
   color: #7864b3;
 }
 
+button:focus {
+  outline:0;
+}
+
+input {
+  border-radius: 1000px;
+  border: 1px solid #a0a0a0;
+  height: 33px;
+  box-shadow: 1px 1px 6px 0px #a0a0a0;
+  box-sizing: border-box;
+  margin-right: 15px;
+  padding-left: 10px;
+  flex-grow: 100;
+}
+
 .Navbar {
   display: flex;
   height: 40px;
@@ -223,7 +238,7 @@ p {
 }
 
 .Timeline .line::-webkit-progress-value {
-  background-color: #2BC0C7;
+  background-color: #7864b3;
   border-radius: 4px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
 }
@@ -271,7 +286,7 @@ p {
 
 .TeamSection.Section {
   background-image: url('./assets/images/circle-and-cross.png');
-  background-size: contain;
+  background-size: cover;
 }
 
 .Team {
@@ -313,4 +328,15 @@ p {
 
 .Team .member p {
   color: #1b1b1b;
+  font-size: 12px;
+  margin-bottom: 0px;
+}
+
+.EmailDrop {
+  width: 400px;
+}
+
+.EmailDrop h2 {
+  color: #564fa3;
+  margin-top: 0px;
 }

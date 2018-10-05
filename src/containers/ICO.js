@@ -1,9 +1,11 @@
 import React from 'react'
 import Section from './Section'
-import SectionHeader from '../components/SectionHeader'
+import EmailDrop from '../components/EmailDrop'
+import deskImage from '../assets/images/desk.png'
 
 export default props => (
-  <Section>
-    <SectionHeader>Elixium ICO</SectionHeader>
+  <Section style={{ paddingTop: '20px' }} id="presale">
+    <EmailDrop />
+    <img src={ deskImage } className="sectionImage" alt='' />
   </Section>
 )

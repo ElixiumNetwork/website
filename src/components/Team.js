@@ -9,7 +9,7 @@ const members = [
     name: 'Alex Dovzhanyn',
     title: 'Technical Co-Founder',
     image: alex,
-    description: 'Lorem ipsum dolor set amet words words words'
+    description: 'Alex is a polyglot Software Engineer who has taught at NYU, helped companies scale, and is devoted to developing state-of-the art systems.'
   },
   {
     name: 'Enver Peck',

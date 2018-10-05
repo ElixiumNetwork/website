@@ -6,7 +6,7 @@ import anonymous from '../assets/images/anonymous.svg'
 import script from '../assets/images/script.svg'
 
 export default props => (
-  <Section dark style={{ paddingTop: '40px' }}>
+  <Section dark style={{ paddingTop: '40px' }} id="features">
     <SectionHeader white>Features</SectionHeader>
     <div className="textBlock light centered">
       <img src={ lightning } alt='Lightning' />
