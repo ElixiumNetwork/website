@@ -9,7 +9,7 @@ const scrollToPresale = () => {
 export default props => (
   <div className="Navbar">
     <img src={ logo } alt='Elixium Logo' className="logo"/>
-    <div className="links">
+    <div className="links hidden-before-mobile">
       <a href="#features">Features</a>
       <a href="#roadmap">Roadmap</a>
       <a href="/3">Whitepaper</a>

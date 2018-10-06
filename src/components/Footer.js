@@ -5,7 +5,7 @@ export default props => (
   <div className="Footer">
     <img src={ curve } className="purple-curve" alt='' />
     <div className="Footer-body">
-      <div className="Footer-text">
+      <div className="Footer-text hidden-before-mobile">
         <h3>Our Mission</h3>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean

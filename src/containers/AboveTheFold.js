@@ -9,6 +9,7 @@ const openTelegram = () => {
 
 export default props => (
   <Section>
+    <img src={ headerImage } className="sectionImage right hidden-past-mobile" alt='' />
     <div className="textBlock">
       <h1>The Future of the Internet is Here</h1>
       <p>
@@ -18,6 +19,6 @@ export default props => (
       </p>
       <Button primary text='Telegram Group' onClick={ openTelegram } />
     </div>
-    <img src={ headerImage } className="sectionImage right" alt='' />
+    <img src={ headerImage } className="sectionImage right hidden-before-mobile" alt='' />
   </Section>
 )

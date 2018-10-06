@@ -291,7 +291,7 @@ input {
 
 .Team {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
   padding-left: 100px;
   padding-right: 100px;
@@ -301,15 +301,17 @@ input {
 .Team .member {
   background: #fff;
   box-shadow: 1px 1px 1px 1px #f0f0f0;
-  padding: 30px;
-  width: 275px;
+  padding: 10px;
+  width: 130px;
   box-sizing: border-box;
-  margin-bottom: 40px;
+  margin-bottom: 15px;
+  margin-right: 7px;
+  margin-left: 7px;
+  cursor: pointer;
 }
 
 .Team .member img {
-  width: 50%;
-  border-radius: 1000px;
+  width: 100%;
   display: block;
   margin: auto;
 }
@@ -317,6 +319,7 @@ input {
 .Team .member h3 {
   text-align: center;
   margin-bottom: 0px;
+  font-size: 14px;
 }
 
 .Team .member h4 {
@@ -339,4 +342,71 @@ input {
 .EmailDrop h2 {
   color: #564fa3;
   margin-top: 0px;
+}
+
+.hidden-past-mobile {
+  display: none;
+}
+
+.hidden-before-mobile {
+  display: inline-block;
+}
+
+
+/* Mobile-specific styles */
+
+@media only screen and (max-width : 480px) {
+  .textBlock {
+    max-width: 300px;
+    margin-bottom: 40px;
+  }
+
+  .sectionImage {
+    width: 300px;
+  }
+
+  .Section {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .Section.dark {
+    padding-bottom: 10px;
+  }
+
+  .hidden-past-mobile {
+    display: inline-block !important;
+  }
+
+  .hidden-before-mobile {
+    display: none !important;
+  }
+
+  .Navbar {
+    justify-content: center;
+  }
+
+  .Navbar .logo {
+    margin-left: 0px;
+  }
+
+  .Team {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+  }
+
+  .EmailDrop {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .purple-curve {
+    margin-bottom: -1px;
+  }
+
+  .Footer-links {
+    margin-right: 0px;
+  }
 }

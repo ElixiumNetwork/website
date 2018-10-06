@@ -6,6 +6,6 @@ import deskImage from '../assets/images/desk.png'
 export default props => (
   <Section style={{ paddingTop: '20px' }} id="presale">
     <EmailDrop />
-    <img src={ deskImage } className="sectionImage" alt='' />
+    <img src={ deskImage } className="sectionImage hidden-before-mobile" alt='' />
   </Section>
 )

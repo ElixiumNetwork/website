@@ -1,39 +1,37 @@
-import React from 'react'
-import alex from '../assets/images/alex.jpg'
+import React, { Component } from 'react'
 
-const enver = alex
-const vans = alex
-
-const members = [
-  {
-    name: 'Alex Dovzhanyn',
-    title: 'Technical Co-Founder',
-    image: alex,
-    description: 'Alex is a polyglot Software Engineer who has taught at NYU, helped companies scale, and is devoted to developing state-of-the art systems.'
-  },
-  {
-    name: 'Enver Peck',
-    title: 'Co-Founder',
-    image: enver,
-    description: ''
-  },
-  {
-    name: 'Vans Design',
-    title: 'Designer',
-    image: vans,
-    description: ''
+export default class Team extends Component {
+  state = {
+    contributors: []
   }
-]
 
-export default props => (
-  <div className="Team">
-    { members.map(member => (
-      <div className="member">
-        <img src={ member.image } alt={ member.name } />
-        <h3>{ member.name }</h3>
-        <h4>{ member.title }</h4>
-        <p>{ member.description }</p>
+  fetchContributors = async () => {
+    let response = await fetch('https://api.github.com/repos/ElixiumNetwork/elixium_core/stats/contributors', {
+      headers: {
+        'Content-Type': 'application/vnd.github.hellcat-preview+json'
+      }
+    })
+    .then(res => res.json())
+
+    return response.sort((a, b) => b.total - a.total).map(c => c.author)
+  }
+
+  openGithub = url => () => window.open(url, '_blank')
+
+  componentDidMount() {
+    this.fetchContributors().then(contributors => this.setState({ contributors }))
+  }
+
+  render() {
+    return (
+      <div className="Team">
+        { this.state.contributors.map(contributor => (
+          <div className="member" onClick={ this.openGithub(contributor.html_url) }>
+            <img src={ contributor.avatar_url } alt={ contributor.login } />
+            <h3>{ contributor.login }</h3>
+          </div>
+        ))}
       </div>
-    ))}
-  </div>
-)
+    )
+  }
+}
