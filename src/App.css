@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Museo';
-  src: local('Museo'), url(./assets/fonts/Museo.otf) format('otf');
+  src: url('./assets/fonts/Museo.otf') format('opentype');
 }
 
 body {
