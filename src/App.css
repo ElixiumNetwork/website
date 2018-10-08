@@ -410,3 +410,7 @@ input {
     margin-right: 0px;
   }
 }
+
+html{
+  scroll-behavior: smooth;
+}
