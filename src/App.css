@@ -37,6 +37,8 @@ input {
   align-items: center;
   padding-top: 20px;
   padding-bottom: 20px;
+  margin-left: 15%;
+  margin-right:15%;
 }
 
 .Navbar .logo {
@@ -116,6 +118,7 @@ input {
 
 .textBlock {
   padding: 0px 15px;
+  margin-left:3%;
   max-width: 400px;
 }
 
