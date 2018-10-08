@@ -425,7 +425,6 @@ align-items: center;
 /* padding-top: 80px; */
 padding-bottom: 20px;
 flex-wrap: wrap;
-
 height: 100vh;
 background-image: linear-gradient(rgba(255,255,255,.95), rgba(255,255,255,.97)), url(./assets/images/background-image-logo.svg);
 background-size: 30%;
@@ -436,4 +435,8 @@ background-repeat: no-repeat;
 
 *:focus {
   outline: none;
+}
+
+.textBlock h1{
+  font-size:2.5rem;
 }
