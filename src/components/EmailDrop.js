@@ -16,7 +16,7 @@ export default class EmailDrop extends Component {
           method='post'
           style={{ display: 'flex' }}
           target="_blank"
-          novalidate
+          noValidate
         >
           <input type='text' name='EMAIL' placeholder='you@example.com' onChange={ this.updateEmail } />
           <Button primary text='Sign Me Up' submit />

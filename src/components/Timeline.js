@@ -47,7 +47,7 @@ const completedEvents = events.filter(event => event.completed).length
 export default props => (
   <div className="Timeline">
     { topEvents.map((event, i) => (
-      <div style={{
+      <div key={ i } style={{
         left: `${(100 / events.length) * (i * 2 + 1)}%`,
         display: 'inline-block',
         position: 'absolute',
@@ -67,7 +67,7 @@ export default props => (
       className="line"
     />
     { bottomEvents.map((event, i) => (
-      <div style={{
+      <div key={ i } style={{
         left: `${(100 / events.length) * (i * 2)}%`,
         display: 'inline-block',
         position: 'absolute'
