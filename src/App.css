@@ -118,7 +118,6 @@ input {
 
 .textBlock {
   padding: 0px 15px;
-  margin-left:3%;
   max-width: 400px;
 }
 
@@ -302,10 +301,11 @@ input {
 }
 
 .Team .member {
-  background: #fff;
-  box-shadow: 1px 1px 1px 1px #f0f0f0;
-  padding: 10px;
-  width: 130px;
+  /* background: #fff; */
+  /* box-shadow: 1px 1px 1px 1px #f0f0f0; */
+  /* padding: 10px; */
+  /* width: 130px; */
+  padding-bottom: 5px;
   box-sizing: border-box;
   margin-bottom: 15px;
   margin-right: 7px;
@@ -437,6 +437,22 @@ background-repeat: no-repeat;
   outline: none;
 }
 
-.textBlock h1{
+.main-area-text h1{
   font-size:2.5rem;
+}
+.main-area-text{
+  margin-left:3%;
+}
+
+.member {
+  background: #FFFFFF;
+  max-width: 500px;
+  margin: 10px auto;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  box-sizing: border-box;
+  /* padding: 48px; */
+  text-align: center;
+  width:200px;
+
 }

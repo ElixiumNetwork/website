@@ -10,7 +10,7 @@ const openTelegram = () => {
 export default props => (
   <Section className="main-area">
     <img src={ headerImage } className="sectionImage right hidden-past-mobile" alt='' />
-    <div className="textBlock">
+    <div className="textBlock main-area-text">
       <h1>The Future of the Internet is Here</h1>
       <p>
         Replace your tech stack with a decentralized network built to work
