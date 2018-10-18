@@ -8,10 +8,8 @@ export default props => (
       <div className="Footer-text hidden-before-mobile">
         <h3>Our Mission</h3>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-          faucibus pellentesque velit bibendum molestie. Aenean eget
-          pretium leo. Cras tincidunt mauris ante, luctus volutpat nibh
-          sollicitudin vitae.
+          We're here to provide a trustless, decentralized ecosystem for developing
+          applications in a way that isn't a pain to developers.
         </p>
       </div>
       <div className="Footer-links">
@@ -25,7 +23,7 @@ export default props => (
         <div className="Footer-section">
           <h3>Foundation</h3>
           <a href='/'>About</a>
-          <a href='/'>Team</a>
+          <a href='#team'>Team</a>
           <a href='mailto:team@elixium.app'>Contact</a>
         </div>
         <div className="Footer-section">

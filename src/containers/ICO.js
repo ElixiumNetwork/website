@@ -1,11 +1,27 @@
-import React from 'react'
+import React, { Component } from 'react'
 import Section from './Section'
 import EmailDrop from '../components/EmailDrop'
-import deskImage from '../assets/images/desk.png'
+import spinner from '../assets/images/spinner.mp4'
 
-export default props => (
-  <Section style={{ paddingTop: '20px' }} id="presale">
-    <EmailDrop />
-    <img src={ deskImage } className="sectionImage hidden-before-mobile" alt='' />
-  </Section>
-)
+export default class ICO extends Component {
+  componentDidMount() {
+    this.video.playbackRate = 0.8
+  }
+
+  render() {
+    return (
+      <Section style={{ paddingTop: '20px' }} id="presale">
+        <EmailDrop />
+        <video
+          autoPlay
+          loop
+          muted
+          className="sectionImage hidden-before-mobile"
+          ref={ ref => this.video = ref }
+        >
+          <source src={ spinner } type='video/mp4' />
+        </video>
+      </Section>
+    )
+  }
+}

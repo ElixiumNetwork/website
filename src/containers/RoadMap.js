@@ -2,6 +2,7 @@ import React from 'react'
 import Section from './Section'
 import Timeline from '../components/Timeline'
 import SectionHeader from '../components/SectionHeader'
+import roadmap from '../assets/images/roadmap.svg'
 
 export default props => (
   <Section
@@ -13,6 +14,6 @@ export default props => (
       paddingBottom: '60px'
   }}>
     <SectionHeader>Project Roadmap</SectionHeader>
-    <Timeline />
+    <img src={ roadmap } style={{ width: '100%' }}/>
   </Section>
 )

@@ -37,8 +37,6 @@ input {
   align-items: center;
   padding-top: 20px;
   padding-bottom: 20px;
-  margin-left: 15%;
-  margin-right:15%;
 }
 
 .Navbar .logo {
@@ -55,7 +53,6 @@ input {
 }
 
 .Navbar .links a {
-  /* margin-left: 30px; */
   font-size: 12px;
   color: #564fa3;
   text-decoration: none;
@@ -412,25 +409,30 @@ input {
   .Footer-links {
     margin-right: 0px;
   }
+
+  .main-area {
+    background-image: none !important;
+    margin-top: 0px !important;
+    padding-bottom: 10px !important;
+  }
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
 .main-area{
-display: flex;
-justify-content: space-around;
-align-items: center;
-/* padding-top: 80px; */
-padding-bottom: 20px;
-flex-wrap: wrap;
-height: 100vh;
-background-image: linear-gradient(rgba(255,255,255,.95), rgba(255,255,255,.97)), url(./assets/images/background-image-logo.svg);
-background-size: 30%;
-background-position-x: 5%;
-background-position-y: 30%;
-background-repeat: no-repeat;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 50px;
+  flex-wrap: wrap;
+  background-image: linear-gradient(rgba(255,255,255,.95), rgba(255,255,255,.97)), url(./assets/images/background-image-logo.svg);
+  background-size: 250px;
+  background-position-x: 8%;
+  background-position-y: 30%;
+  background-repeat: no-repeat;
 }
 
 *:focus {
@@ -451,10 +453,8 @@ background-repeat: no-repeat;
   border-radius: 12px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   box-sizing: border-box;
-  /* padding: 48px; */
   text-align: center;
-  width:200px;
-
+  width: 130px;
 }
 
 
