@@ -1,7 +1,7 @@
 import React from 'react'
 import Button from '../components/Button'
 import Section from './Section'
-import headerImage from '../assets/images/Cryptocurrency.png'
+import headerImage from '../assets/images/Cryptocurrency.svg'
 
 const openTelegram = () => {
   window.open('https://t.me/elixiumnetwork', '_blank')

@@ -415,6 +415,11 @@ input {
     margin-top: 0px !important;
     padding-bottom: 10px !important;
   }
+
+  #roadmap {
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+  }
 }
 
 html {
