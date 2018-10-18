@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 
+
 export default class Team extends Component {
   state = {
     contributors: []
@@ -26,7 +27,7 @@ export default class Team extends Component {
     return (
       <div className="Team">
         { this.state.contributors.map(contributor => (
-          <div className="member" onClick={ this.openGithub(contributor.html_url) }>
+          <div key={ contributor.id }  className="member" onClick={ this.openGithub(contributor.html_url) }>
             <img src={ contributor.avatar_url } alt={ contributor.login } />
             <h3>{ contributor.login }</h3>
           </div>
