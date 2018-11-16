@@ -18,7 +18,7 @@ export default props => (
           <a href='/whitepaper'>Whitepaper</a>
           <a href='https://www.github.com/ElixiumNetwork/elixium_core'>Source</a>
           <a href='https://research.elixium.app'>Research</a>
-          <a href='https://blog.elixium.app'>Blog</a>
+          <a href='https://developers.elixiumnetwork.org'>Developer Guide</a>
         </div>
         <div className="Footer-section">
           <h3>Foundation</h3>
