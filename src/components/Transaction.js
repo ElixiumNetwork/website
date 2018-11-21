@@ -39,7 +39,7 @@ const Utxo = ({ utxo }) => (
   <div style={ styles.utxo }>
     <p style={{ margin: '0px', color: '#2CBFC7', display: 'inline-block', margin: '0px' }}>{ utxo.addr.substring(0, 30) }...</p>
     <p style={{ color: '#1b1b1b', display: 'inline-block', margin: '0px' }}>
-      { parseFloat(utxo.amount.coef.toString().substring(0, 10)) * 100 } XEX
+      { (utxo.amount.sign * utxo.amount.coef * Math.pow(10, utxo.amount.exp)).toFixed(4) } XEX
     </p>
   </div>
 )
