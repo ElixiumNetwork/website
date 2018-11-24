@@ -36,9 +36,9 @@ class Block extends Component {
   }
 
   getBlock(hash) {
-    fetch(`http://localhost:32123/block_by_hash/${hash}`)
+    fetch(`http://ec2-35-162-9-215.us-west-2.compute.amazonaws.com:32123/block_by_hash/${hash}`)
     .then(d => d.json())
-    .then(block => this.setState({ block }, () => fetch(`http://localhost:32123/latest_block`)
+    .then(block => this.setState({ block }, () => fetch(`http://ec2-35-162-9-215.us-west-2.compute.amazonaws.com:32123/latest_block`)
     .then(d => d.json())
     .then(latestBlock => this.setState({ latestBlock }))))
   }

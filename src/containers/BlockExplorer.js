@@ -16,7 +16,7 @@ class BlockExplorer extends Component {
   fetchBlocks = count => {
     console.log('Fetching Blocks!')
 
-    fetch(`http://localhost:32123/last_n_blocks/${count}`)
+    fetch(`http://ec2-35-162-9-215.us-west-2.compute.amazonaws.com:32123/last_n_blocks/${count}`)
     .then(d => d.json())
     .then(blocks => this.setState({ blocks }))
   }
