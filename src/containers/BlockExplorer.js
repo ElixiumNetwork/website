@@ -80,6 +80,9 @@ class BlockExplorer extends Component {
       Header: 'Size (kB)',
       accessor: 'size',
       Cell: ({ value }) => (value / 1024).toFixed(3)
+    }, {
+      Header: 'Nonce',
+      accessor: 'nonce'
     }]
 
     return (
