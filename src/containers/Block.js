@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import moment from 'moment'
 import Transaction from '../components/Transaction'
+import ColorHash from '../components/ColorHash'
 
 const styles = {
   text: {
@@ -54,13 +55,19 @@ class Block extends Component {
 
     return (
       <div style={{ paddingLeft: '200px', paddingRight: '200px', boxSizing: 'border-box', width: '100%' }}>
-        <h1>Block #{ block.index }</h1>
+        <span style={{ fontSize: '24px', fontWeight: 'bold' }}>
+          <Link to='/blockexplorer'>Blocks</Link> / &nbsp;
+          <h1 style={{ fontSize: '24px', display: 'inline-block' }}>Block #{ block.index }</h1>
+        </span>
+
         <div style={ styles.hash }>
           Hash
           <span style={{ color: '#808080', marginLeft: '20px' }}>
             { block.hash.toLowerCase() }
           </span>
         </div>
+
+        <ColorHash hash={ block.hash } />
 
         <h2>Summary</h2>
         <div style={ styles.summaryContainer }>
@@ -83,13 +90,13 @@ class Block extends Component {
             </div>
             <div style={{ borderTop: '1px solid #c0c0c0', display: 'flex', justifyContent: 'space-between' }}>
               <p style={ styles.text }><strong>Merkle Root</strong></p>
-              <p style={ styles.text }>{ block.merkle_root.toLowerCase() }</p>
+              <p style={ styles.text }><ColorHash hash={ block.merkle_root } /></p>
             </div>
           </div>
           <div style={{ width: '48%', display: 'inline-block', float: 'left' }}>
             <div style={{ borderTop: '1px solid #c0c0c0', display: 'flex', justifyContent: 'space-between' }}>
               <p style={ styles.text }><strong>Previous Block</strong></p>
-              <Link style={ styles.text } to={`/blockexplorer/block/${block.previous_hash}`}>{ block.previous_hash.toLowerCase() }</Link>
+              <Link style={ styles.text } to={`/blockexplorer/block/${block.previous_hash}`}><ColorHash hash={ block.previous_hash } /></Link>
             </div>
             <div style={{ borderTop: '1px solid #c0c0c0', display: 'flex', justifyContent: 'space-between' }}>
               <p style={ styles.text }><strong>Difficulty</strong></p>

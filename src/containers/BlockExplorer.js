@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import ReactTable from 'react-table'
 import moment from 'moment'
 import 'react-table/react-table.css'
+import ColorHash from '../components/ColorHash'
 
 class BlockExplorer extends Component {
   state = {
@@ -31,18 +32,54 @@ class BlockExplorer extends Component {
     }, {
       Header: 'Hash',
       accessor: 'hash',
-      Cell: ({ value }) => <Link to={`/blockexplorer/block/${value}`}><span style={{ fontFamily: 'monospace' }}>{ value }</span></Link>,
-      minWidth: 525
+      Cell: ({ value }) => <Link to={`/blockexplorer/block/${value}`}><ColorHash hash={ value } /></Link>,
+      width: 150
     }, {
-      Header: 'Timestamp',
+      Header: 'Time (UTC)',
       accessor: 'timestamp',
-      Cell: ({ value }) => moment.unix(value).format('MMM DD, YYYY hh:mm:ss A'),
-      width: 220
+      Cell: ({ value }) => moment.unix(value).format('YYYY-MM-DD H:mm'),
+      width: 150
     }, {
-      Header: 'Transactions',
+      Header: 'TX Count',
       accessor: 'transactions',
       Cell: ({ value }) => value.length,
-      maxWidth: 200
+      maxWidth: 100
+    }, {
+      Header: 'Output (XEX)',
+      accessor: 'transactions',
+      Cell: ({ value }) => value.reduce((txac, tx) => {
+        return txac + tx.outputs.reduce((acc, o) => acc + (o.amount.sign * o.amount.coef * Math.pow(10, o.amount.exp)), 0)
+      }, 0).toFixed(6)
+    }, {
+      Header: 'Fees (XEX)',
+      accessor: 'reward',
+      Cell: ({ value, original }) => {
+        let totalOut = original.transactions[0].outputs.reduce((acc, o) => acc + (o.amount.sign * o.amount.coef * Math.pow(10, o.amount.exp)), 0)
+        return (totalOut - (value.sign * value.coef * Math.pow(10, value.exp))).toFixed(6)
+      }
+    }, {
+      Header: 'Fee/kB (XEX)',
+      accessor: 'transactions',
+      Cell: ({ value, original }) => {
+        let transactions = value.slice(1)
+
+        let fpb = transactions.map(tx => {
+          let totalIn = tx.inputs.reduce((a, { amount }) => a + (amount.sign * amount.coef * Math.pow(10, amount.exp)), 0)
+          let totalOut = tx.outputs.reduce((a, { amount }) => a + (amount.sign * amount.coef * Math.pow(10, amount.exp)), 0)
+
+          return ((totalIn - totalOut) / tx.size) / 1024
+        })
+
+        return ((fpb.reduce((acc, f) => acc + f, 0) / fpb.length) || 0).toFixed(6)
+      }
+    }, {
+      Header: 'Difficulty',
+      accessor: 'difficulty',
+      Cell: ({ value }) => value.toFixed(3)
+    }, {
+      Header: 'Size (kB)',
+      accessor: 'size',
+      Cell: ({ value }) => (value / 1024).toFixed(3)
     }]
 
     return (

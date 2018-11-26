@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import ColorHash from '../components/ColorHash'
 
 const styles = {
   container: {
@@ -46,7 +47,7 @@ const Utxo = ({ utxo }) => (
 
 export default ({ transaction, latestBlockIndex, currBlockIndex }) => (
   <div style={ styles.container }>
-    <Link to=''>{ transaction.id.toLowerCase() }</Link>
+    <Link to=''><ColorHash hash={ transaction.id } /></Link>
     <div style={ styles.transactionContent }>
       <div style={ styles.utxoContainer }>
         { transaction.inputs.length
