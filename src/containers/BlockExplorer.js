@@ -67,7 +67,7 @@ class BlockExplorer extends Component {
           let totalIn = tx.inputs.reduce((a, { amount }) => a + (amount.sign * amount.coef * Math.pow(10, amount.exp)), 0)
           let totalOut = tx.outputs.reduce((a, { amount }) => a + (amount.sign * amount.coef * Math.pow(10, amount.exp)), 0)
 
-          return ((totalIn - totalOut) / tx.size) / 1024
+          return ((totalIn - totalOut) / tx.size) * 1024
         })
 
         return ((fpb.reduce((acc, f) => acc + f, 0) / fpb.length) || 0).toFixed(6)
