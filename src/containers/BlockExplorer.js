@@ -17,7 +17,7 @@ class BlockExplorer extends Component {
   fetchBlocks = count => {
     console.log('Fetching Blocks!')
 
-    fetch(`http://192.34.60.157:32123/last_n_blocks/${count}`)
+    fetch(`http://144.202.29.48:32123/last_n_blocks/${count}`)
     .then(d => d.json())
     .then(blocks => this.setState({ blocks }))
   }
