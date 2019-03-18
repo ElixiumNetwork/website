@@ -48,14 +48,14 @@ class BlockExplorer extends Component {
       Header: 'Output (XEX)',
       accessor: 'transactions',
       Cell: ({ value }) => value.reduce((txac, tx) => {
-        return txac + tx.outputs.reduce((acc, o) => acc + (o.amount.sign * o.amount.coef * Math.pow(10, o.amount.exp)), 0)
+        return txac + tx.outputs.reduce((acc, o) => acc + o.amount, 0)
       }, 0).toFixed(6)
     }, {
       Header: 'Fees (XEX)',
       accessor: 'reward',
       Cell: ({ value, original }) => {
-        let totalOut = original.transactions[0].outputs.reduce((acc, o) => acc + (o.amount.sign * o.amount.coef * Math.pow(10, o.amount.exp)), 0)
-        return (totalOut - (value.sign * value.coef * Math.pow(10, value.exp))).toFixed(6)
+        let totalOut = original.transactions[0].outputs.reduce((acc, o) => acc + o.amount, 0)
+        return totalOut - value
       }
     }, {
       Header: 'Fee/kB (XEX)',

@@ -39,7 +39,7 @@ class Block extends Component {
   getBlock(hash) {
     fetch(`http://144.202.29.48:32123/block_by_hash/${hash}`)
     .then(d => d.json())
-    .then(block => this.setState({ block }, () => fetch(`http://192.34.60.157:32123/latest_block`)
+    .then(block => this.setState({ block }, () => fetch(`http://144.202.29.48:32123/latest_block`)
     .then(d => d.json())
     .then(latestBlock => this.setState({ latestBlock }))))
   }
@@ -82,7 +82,7 @@ class Block extends Component {
             </div>
             <div style={{ borderTop: '1px solid #c0c0c0', display: 'flex', justifyContent: 'space-between' }}>
               <p style={ styles.text }><strong>Block Reward</strong></p>
-              <p style={ styles.text }>{ parseFloat(block.transactions[0].outputs[0].amount.coef.toString().substring(0, 10)) * 100 } XEX</p>
+              <p style={ styles.text }>{ block.transactions[0].outputs[0].amount } XEX</p>
             </div>
             <div style={{ borderTop: '1px solid #c0c0c0', display: 'flex', justifyContent: 'space-between' }}>
               <p style={ styles.text }><strong>Timestamp</strong></p>
