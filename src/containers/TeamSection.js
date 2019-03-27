@@ -5,7 +5,7 @@ import SectionHeader from '../components/SectionHeader'
 
 export default props => (
   <Section style={{ paddingTop: '40px' }} className="TeamSection Section dark" id="team">
-    <SectionHeader white>Team</SectionHeader>
+    <SectionHeader white>Contributors</SectionHeader>
     <Team />
   </Section>
 )

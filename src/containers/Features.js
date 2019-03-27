@@ -25,7 +25,7 @@ export default props => (
         <img src={ anonymous } alt='Anonymous' />
         <h3>Anonymous</h3>
         <p>
-          Using Zero-knowledge Proof of Work and standardized intervalized
+          Using Zero-knowledge proofs and standardized intervalized
           key-swapping, Elixium is able to protect the identity of its users
           by ensuring that they can not be identified by transaction contents
           or patterns.
