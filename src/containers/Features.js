@@ -9,7 +9,7 @@ import purpleCurve from '../assets/images/curve.png'
 export default props => (
   <React.Fragment>
     <img src={ purpleCurve } style={{ width: '100%', display: 'block', marginBottom: '-1px' }} />
-    <Section dark id="features">
+    <Section dark="true" id="features">
       <SectionHeader white>Features</SectionHeader>
       <div className="textBlock light centered">
         <img src={ lightning } alt='Lightning' />
