@@ -1,0 +1,499 @@
+@font-face {
+  font-family: 'Museo';
+  font-display: auto;
+  src: url('/static/fonts/Museo.otf') format('opentype');
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Museo', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+
+
+
+
+
+h1 {
+  color: #5650a3;
+}
+
+p {
+  color: #7864b3;
+}
+
+button:focus {
+  outline:0;
+}
+
+input {
+  border-radius: 1000px;
+  border: 1px solid #a0a0a0;
+  height: 33px;
+  box-shadow: 1px 1px 6px 0px #a0a0a0;
+  box-sizing: border-box;
+  margin-right: 15px;
+  padding-left: 10px;
+  flex-grow: 100;
+}
+
+.Navbar {
+  display: flex;
+  height: 40px;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.Navbar .logo {
+  height: 40px;
+  margin-left: 40px;
+}
+
+.Navbar .links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 400px;
+  margin-right: 40px;
+}
+
+.Navbar .links a {
+  font-size: 12px;
+  color: #564fa3;
+  text-decoration: none;
+}
+
+.btn {
+  border-radius: 1000px;
+  padding: 10px 20px;
+  color: #fff;
+  font-family: 'Museo';
+  border: 0px;
+  box-shadow: 1px 1px 6px 0px #a0a0a0;
+  cursor: pointer;
+  position: relative;
+  z-index: 100;
+}
+
+.btn:hover {
+  box-shadow: 1px 2px 6px 0px #a0a0a0;
+}
+
+.btn.btn-primary {
+  background: linear-gradient(to right, #5650a3 0%,#7864b3 100%);
+}
+
+.btn:before {
+  border-radius: inherit;
+  content: '';
+  opacity: 0;
+  z-index: -100;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity .7s;
+  width: 100%;
+  height: 100%;
+}
+
+.btn:hover:before {
+  opacity: 1;
+}
+
+.btn.btn-primary:before {
+  background: linear-gradient(to left, #5650a3 0%,#7864b3 100%);
+}
+
+.Section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 80px;
+  padding-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.textBlock {
+  padding: 0px 15px;
+  max-width: 400px;
+}
+
+.textBlock.light p,
+.textBlock.light h3 {
+  color: #fff;
+}
+
+.textBlock img {
+  height: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.textBlock.centered {
+  text-align: center;
+}
+
+.textBlock.centered h3 {
+  text-align: center;
+}
+
+.Section img {
+  align-self: center;
+}
+
+.Section.dark {
+  background-color: #564fa3;
+  padding-top: 0px;
+  padding-bottom: 80px;
+}
+
+.Section .SectionHeader {
+  width: 100%;
+  text-align: center;
+  color: #564fa3;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.SectionHeader.white {
+  color: #fff;
+}
+
+.sectionImage {
+  width: 400px;
+}
+
+.Footer-body {
+  background: #564fa3;
+  color: #fff;
+  height: 200px;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
+}
+
+.purple-curve {
+  width: 100%;
+  display: block;
+}
+
+.Footer-links {
+  width: 600px;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 80px;
+}
+
+.Footer-body .Footer-section {
+  display: inline-block;
+  /* margin-left: 20px; */
+}
+
+.Footer-body .Footer-section a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.Footer-body .Footer-section h3,
+.Footer-body .Footer-text h3 {
+  font-size: 16px;
+}
+
+.Footer-body .Footer-text {
+  width: 350px;
+  margin-left: 80px;
+}
+
+.Footer-body .Footer-text p {
+  font-size: 14px;
+  color: #fff;
+}
+
+.Timeline {
+  width: 100%;
+  position: relative;
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+
+.Timeline .line {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 4px;
+  display: block;
+}
+
+.Timeline .line::-webkit-progress-bar {
+  background-color: #d0d0d0;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+.Timeline .line::-webkit-progress-value {
+  background-color: #7864b3;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+.Timeline-box {
+  width: 150px;
+  box-shadow: 1px 1px 1px 1px #d0d0d0;
+  display: inline-block;
+  padding: 10px;
+  background: #fff;
+}
+
+.Timeline-box h4 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.Timeline-box h5 {
+  margin-top: 4px;
+  margin-bottom: 0px;
+  color: #d0d0d0;
+}
+
+.Timeline-box p {
+  margin-top: 10px;
+  margin-bottom: 0px;
+  font-size: 14px;
+}
+
+.triangle-up {
+  width: 0;
+	height: 0;
+	border-left: 20px solid transparent;
+	border-right: 0px solid transparent;
+	border-bottom: 20px solid #7864b3;
+}
+
+.triangle-down {
+  width: 0;
+	height: 0;
+	border-left: 0px solid transparent;
+	border-right: 20px solid transparent;
+	border-top: 20px solid #7864b3;
+}
+
+.TeamSection.Section {
+  background-image:url('/static/images/circle-and-cross.png');
+  /* background-image: url('../assets/images/circle-and-cross.png'); */
+  background-size: cover;
+}
+
+.Team {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-left: 100px;
+  padding-right: 100px;
+  flex-wrap: wrap;
+}
+
+.Team .member {
+  /* background: #fff; */
+  /* box-shadow: 1px 1px 1px 1px #f0f0f0; */
+  /* padding: 10px; */
+  /* width: 130px; */
+  padding-bottom: 5px;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+  margin-right: 7px;
+  margin-left: 7px;
+  cursor: pointer;
+}
+
+.Team .member img {
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+
+.Team .member h3 {
+  text-align: center;
+  margin-bottom: 0px;
+  font-size: 14px;
+}
+
+.Team .member h4 {
+  text-align: center;
+  color: #a0a0a0;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.Team .member p {
+  color: #1b1b1b;
+  font-size: 12px;
+  margin-bottom: 0px;
+}
+
+.EmailDrop {
+  width: 400px;
+}
+
+.EmailDrop h2 {
+  color: #564fa3;
+  margin-top: 0px;
+}
+
+.hidden-past-mobile {
+  display: none;
+}
+
+.hidden-before-mobile {
+  display: inline-block;
+}
+
+
+/* Mobile-specific styles */
+
+@media only screen and (max-width : 480px) {
+  .textBlock {
+    max-width: 300px;
+    margin-bottom: 40px;
+  }
+
+  .sectionImage {
+    width: 300px;
+  }
+
+  .Section {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .Section.dark {
+    padding-bottom: 10px;
+  }
+
+  .hidden-past-mobile {
+    display: inline-block !important;
+  }
+
+  .hidden-before-mobile {
+    display: none !important;
+  }
+
+  .Navbar {
+    justify-content: center;
+  }
+
+  .Navbar .logo {
+    margin-left: 0px;
+  }
+
+  .Team {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+  }
+
+  .EmailDrop {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .purple-curve {
+    margin-bottom: -1px;
+  }
+
+  .Footer-links {
+    margin-right: 0px;
+  }
+
+  .main-area {
+    background-image: none !important;
+    margin-top: 0px !important;
+    padding-bottom: 10px !important;
+  }
+
+  #roadmap {
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.main-area{
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 50px;
+  flex-wrap: wrap;
+  background-image: linear-gradient(rgba(255,255,255,.95), rgba(255,255,255,.97)), url('/static/images/background-image-logo.svg');
+  background-size: 250px;
+  background-position-x: 8%;
+  background-position-y: 30%;
+  background-repeat: no-repeat;
+}
+
+*:focus {
+  outline: none;
+}
+
+.main-area-text h1{
+  font-size:2.5rem;
+}
+.main-area-text{
+  margin-left:3%;
+}
+
+.member {
+  background: #FFFFFF;
+  max-width: 500px;
+  margin: 10px auto;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  box-sizing: border-box;
+  text-align: center;
+  width: 130px;
+}
+
+
+::-webkit-scrollbar
+{
+  width: 12px;  /* for vertical scrollbars */
+  height: 12px; /* for horizontal scrollbars */
+}
+
+::-webkit-scrollbar-track
+{
+  background: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-thumb
+{
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+}
+
+.ReactTable .rt-tbody .rt-td {
+  font-family: monospace;
+}
