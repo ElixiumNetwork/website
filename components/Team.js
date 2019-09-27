@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import NoProfileTile from './NoProfileTile'
 const api_repos = 'https://api.github.com/orgs/ElixiumNetwork/repos';
 const nodata_tiles = Array.from({ length: 10 }, (v, k) => k + 1);
 
@@ -78,9 +78,7 @@ export default class Team extends Component {
             <h3>{contributor.login}</h3>
           </div>
         ))) : (nodata_tiles.map((item, i) => (
-          <div className="member" key={i}>
-            <img src='https://media0.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif' alt='user' />
-          </div>
+         <NoProfileTile key={i}/>
         )))}
       </div>
     )
