@@ -7,6 +7,7 @@ export default props => (
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="shortcut icon" href="../static/favicon.ico" />
     <link rel="canonical" href="https://elixiumnetwork.org" />
+    <link rel="preconnect" href="https://api.github.com"></link>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <meta name="theme-color" content="#5650A3"/>
     <meta
