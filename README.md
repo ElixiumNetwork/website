@@ -42,3 +42,21 @@ No more learning new languages to build for the new web.
 
 ## Interested?
 Feel free to visit our website [elixiumnetwork.org](https://www.elixiumnetwork.org/)
+
+## Built with 🔧
+
+* [Chromium](https://github.com/chromium/chromium) - Thanks for being so fast!
+* HTML - For the web framework
+* CSS - For styling components
+* JavaScript - For magic!
+* [React](https://reactjs.org/) - To add to the JavaScript magic!
+* [Next](https://nextjs.org/) - To add to the React magic!
+
+## Developing 👷
+
+1. [Clone this repo](https://help.github.com/en/articles/cloning-a-repository) with git.
+1. Install dependencies by running `npm install` within the directory that you cloned (probably `website`).
+1. Start the development server with `npm run dev`.
+1. Open development site by going to [http://localhost:3000](http://localhost:3000) in your browser.
+
+
