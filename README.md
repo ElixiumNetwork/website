@@ -1,3 +1,6 @@
+[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/ElixiumNetwork/website/issues)
+[![Inline docs](https://img.shields.io/badge/license-MIT-green)](https://github.com/ElixiumNetwork/elixium_core/blob/master/LICENSE)
+[![Website](https://img.shields.io/website?down_color=grey&down_message=offline&up_color=blue&up_message=online&url=https%3A%2F%2Fwww.elixiumnetwork.org%2F)](www.elixiumnetwork.org)
 # The Elixium Network
 
 Replace your tech stack with a decentralized network built to work for you, in a way that works for you.
