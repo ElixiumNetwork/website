@@ -59,4 +59,24 @@ Feel free to visit our website [elixiumnetwork.org](https://www.elixiumnetwork.o
 1. Start the development server with `npm run dev`.
 1. Open development site by going to [http://localhost:3000](http://localhost:3000) in your browser.
 
+## Authors 🔮
 
+### Lead Developers
+
+* **[alexdovzhanyn](https://github.com/alexdovzhanyn)** - *Author*
+
+### Collaborators
+
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/edisonaugusthy"><img src="https://github.com/edisonaugusthy.png?size=100" width="100px;" alt="Edison"/><br /><sub><b>Edison Augusthy</b></sub></a><br /><a href="https://github.com/ElixiumNetwork/website/commits?author=edisonaugusthy" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/Nijinsha"><img src="https://github.com/Nijinsha.png?size=100" width="100px;" alt="Nijinsha"/><br /><sub><b>Nijinsha Rahman</b></sub></a><br /><a href="https://github.com/ElixiumNetwork/website/commits?author=Nijinsha" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/Adwirawien"><img src="https://github.com/Adwirawien.png?size=100" width="100px;" alt="Adrian"/><br /><sub><b>Adrian</b></sub></a><br /><a href="https://github.com/ElixiumNetwork/website/commits?author=AndrewBastin" title="Code">💻</a></td>
+    
+  </tr>
+  
+</table>
+
+See the list of [contributors](https://github.com/ElixiumNetwork/website/graphs/contributors) who participated in this project.
+
+### Thanks
