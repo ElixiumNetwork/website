@@ -16,6 +16,7 @@ export default props => (
       content="Elixium is an anonymous decentralized application network that is
       language agnostic. Distributed cloud computing has never been this easy."
     />
+    <meta name="keywords" content="elixium, elixium network, elixium online, elixium for mac, elixium app, elixium for windows, elixium google chrome,  get elixium, elixium web, elixium android, blockchain, crpyocurrency, mining"/>
 {/* meta tags for social media - shareing */}
 <meta property="og:title" content="Elixium"/>
 <meta property="og:description" content="Elixium is an anonymous decentralized application network that is
