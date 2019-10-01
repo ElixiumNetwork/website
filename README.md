@@ -79,4 +79,9 @@ Feel free to visit our website [elixiumnetwork.org](https://www.elixiumnetwork.o
 
 See the list of [contributors](https://github.com/ElixiumNetwork/website/graphs/contributors) who participated in this project.
 
+
+## Contributing 🍰
+
+Please read [CONTRIBUTING](CONTRIBUTING.md) for details and the process for submitting pull requests to us.
+
 ### Thanks
