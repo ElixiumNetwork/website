@@ -6,6 +6,10 @@ const openTelegram = () => {
   window.open('https://t.me/elixiumnetwork', '_blank')
 }
 
+const openNodePage = ()=>{
+  window.open(`${window.location.href}runnode`, '_blank')
+}
+
 export default props => (
   <Section className="main-area" >
     <img src="../static/images/Cryptocurrency.svg" className="sectionImage right hidden-past-mobile" alt='Cryptocurrency' />
@@ -16,7 +20,9 @@ export default props => (
         for you, in a way that works for you. No more learning new
         languages to build for the new web.
       </p>
-      <Button primary text='Telegram Group' onClick={openTelegram} />
+      <Button primary text='Telegram Group' onClick={openTelegram} />   
+      <Button  text='Run A Node ..?' onClick={openNodePage} buttonclass="btn btn-primary run-node-button"/>
+      
     </div>
     <img src="../static/images/Cryptocurrency.svg" className="sectionImage right hidden-before-mobile" alt='Cryptocurrency' />
   </Section>
