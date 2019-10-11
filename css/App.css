@@ -66,7 +66,7 @@ input {
   justify-content: space-between;
   align-items: center;
   width: 400px;
-  margin-right: 40px;
+  margin-right: 80px;
 }
 
 .Navbar .links a {
@@ -496,4 +496,8 @@ html {
 
 .ReactTable .rt-tbody .rt-td {
   font-family: monospace;
+}
+.run-node-button{
+  margin-left: 5%;
+  color: #fff;
 }
