@@ -19,9 +19,10 @@ html {
   }
 }
 body {
-  font-family: 'Spectral', Georgia, Times, Times New Roman, serif;
-  color: #454a54;
+  font-family: 'Museo', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  color: #000;
   background-color: #f9fafa;
+  font-size: 20px;
 }
 p {
   line-height: 1.5;
