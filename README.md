@@ -64,9 +64,16 @@ Feel free to visit our website [elixiumnetwork.org](https://www.elixiumnetwork.o
 
 ## Authors 🔮
 
-### Lead Developers
+### Lead Developer
 
-* **[alexdovzhanyn](https://github.com/alexdovzhanyn)** - *Author*
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/alexdovzhanyn"><img src="https://github.com/alexdovzhanyn.png?size=100" width="100px;" alt="alexdovzhanyn"/><br /><sub><b>Alex Dovzhanyn
+</b></sub></a><br /><a href="https://github.com/ElixiumNetwork/website/commits?author=alexdovzhanyn" title="Code">💻</a></td>
+    
+  </tr>
+  
+</table>
 
 ### Collaborators
 
